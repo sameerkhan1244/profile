@@ -1,0 +1,73 @@
+
+/*color class*/
+
+.c1{
+	color:white;
+
+}
+.bd{
+	color:#39ac73 !important;
+}
+.cl1{
+	color:#39ac73;
+}
+/**/
+/*button color*/
+.b1{
+	background-color:#39ac73;
+	text:white;
+	padding:10px;
+	border:1px solid #39ac73;
+	box-shadow:1px 1px 4px #39ac73;
+}
+/**/
+/**image**/
+.im1{
+	border:1px solid #39ac73;
+	box-shadow:1px 1px 10px #39ac73;
+}
+.im2{
+
+	box-shadow:1px 1px 10px #39ac73;
+}
+/**/
+.ro{
+	border:1px solid #39ac73;
+	color:#39ac73;
+}
+/*.ro:hover{
+	background-color:cyan;
+	color:black;
+}*/
+.op{
+	opacity:0.3;
+	border:2px solid #39ac73;
+}
+.op:hover{
+	opacity:0.9;
+	border:2px solid gray;
+}
+.op1{
+	opacity:0.3;
+}
+.op1:hover{
+	opacity:0.9;
+}
+input{
+	background-color:#303030;
+	width:100%;
+}
+textarea{
+	background-color:#303030;
+}
+/***progress-background***/
+.pb{
+	
+}
+.lin{
+	width:20px;
+	background-color:#39ac73;
+	height:2px;
+}
+
+

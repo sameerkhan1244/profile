@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		button{
+			padding:12px;
+			border-radius:50%;
+			border:1px solid #303030;;
+			color:white;
+			background-color:#303030;
+			border:1px solid gray;
+			box-shadow:-1px -1px 4px gray;
+			font-size:13px;
+		}
+		table{
+			box-shadow:1px 1px 15px gray;
+			border:1px solid gray;
+		}
+		table div{
+			font-size:40px;
+		}
+	</style>
+</head>
+<body class="bg-dark">
+	<div class="container mt-4">
+		<div class="row mb-5">
+			<div class="col-md-6 offset-3 offset-md-4 mt-5">
+				<table cellpadding="10px"cellspacing="30px"class="mt-5 bg-dark">
+					<tr>
+						<td colspan="4"class="p-4">
+							<div style="color:white;float:right;">0</div>
+							<input type="text"class="bg-dark text-white"style="display:none;"/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<div class="ot p-4"style="color:white;float:right;font-size:25px;">0</div>
+						</td>
+					</tr>
+					<tr>
+						<td><button class="text-success"onClick="fun1('AC')">AC</button></td>
+						<td><button class="text-success"onClick="fun1('^')"><i class="fa-solid fa-xmark"></i></button></td>
+						<td><button class="text-success"onClick="fun1('%')">%</button></td>
+						<td><button class="text-success"onClick="fun1('/')">/</button></td>
+					</tr>
+					<tr>
+						<td><button onClick="fun1('7')">7</button></td>
+						<td><button onClick="fun1('8')">8</button></td>
+						<td><button onClick="fun1('9')">9</button></td>
+						<td><button class="text-success"onClick="fun1('*')">*</button></td>
+					</tr>
+					<tr>
+						<td><button onClick="fun1('4')">4</button></td>
+						<td><button onClick="fun1('5')">5</button></td>
+						<td><button onClick="fun1('6')">6</button></td>
+						<td><button class="text-success"onClick="fun1('-')">-</button></td>
+					</tr>
+					<tr>
+						<td><button onClick="fun1('1')">1</button></td>
+						<td><button onClick="fun1('2')">2</button></td>
+						<td><button onClick="fun1('3')">3</button></td>
+						<td><button class="text-success"onClick="fun1('+')">+</button></td>
+					</tr>
+					<tr>
+						<td><button onClick="fun1('00')">00</button></td>
+						<td><button onClick="fun1('0')">0</button></td>
+						<td><button onClick="fun1('.')">.</button></td>
+						<td><button style="background-color:#ff6600;border:1px solid  #ff6600;">=</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	var A=0,B=0,sum=0,F=0;
+	var p=[],n=[],s=[];
+	var a=document.getElementsByTagName('div')[3]
+	var inp=document.getElementsByTagName('input')[0]
+		inp.value=a.innerText;
+	function fun1(i)
+	{	
+
+		var a=document.getElementsByTagName('div')[3]
+		a.innerText=" "
+		if(i=='^')
+		{	
+			var r=0;
+			p.pop()
+			for(var q of p)
+			{
+				a.append(q)
+				r++;
+			}
+			if(r==0)
+			a.append('0')
+		}
+		else if(i=='AC')
+		{
+			fun2(p)
+			a.append('0')
+		}
+		else if(i=='+'||i=='-'||i=='*'||i=='/'||i=='%'||i=='.')
+		{
+			if(a.innerText=='')
+			{	
+				if(p.length==0)
+				p[0]=0;
+			}
+			j=p.length-1;
+			if(p[j]!=i)
+			{
+				if(p[j]=='+'||p[j]=='-'||p[j]=='*'||p[j]=='/'||p[j]=='%'||p[j]=='.')
+				{
+						p.pop()
+						p.push(i)
+				}
+				else
+				p.push(i)
+			}
+			
+
+			for(var q of p)
+				a.append(q)
+		}
+		else
+		{
+			p.push(i);
+			for(var q of p)
+			a.append(q)
+		}
+		var inp=document.getElementsByTagName('input')[0]
+		inp.value=a.innerText;
+		function fun2(p)
+		{
+			if(p.length==0)
+				return 0;
+			p.pop();
+			fun2(p);
+		}
+
+		for(i=0;i<n.length;i++)
+		n[i]=''
+
+		for(i=j=0;i<=p.length;i++)
+		{
+			if(p[i]!='+'&&p[i]!='-'&&p[i]!='*'&&p[i]!='/'&&p[i]!='%')
+				n[j]+=p[i];
+			else
+			{
+				n[++j]=p[i]
+				j++;
+			}
+		}
+
+		for(i=0;i<n.length;i++)
+		{
+			if(n[i]!='+'&&n[i]!='-'&&n[i]!='*'&&n[i]!='/'&&n[i]!='%')
+			{
+				n[i]=parseInt(`${n[i]}`);
+			}
+		}
+			
+		for(var i=0;i<n.length;i++)
+		{
+			if((n[i-1]=='*'||n[i-1]=='/'||n[i-1]=='%')&&i!=0&&i%2==0)
+			{	
+				switch(n[i-1])
+				{
+					case '*':n[i]=n[i-2]*n[i];
+							n[i-1]=' '
+							n[i-2]=' '
+					break;
+					case '/':n[i]=n[i-2]/n[i];
+							n[i-1]=' '
+							n[i-2]=' '
+					break;
+					case '%':n[i]=n[i-2]%n[i];
+							n[i-1]=' '
+							n[i-2]=' '
+					break;
+				}
+				
+			}
+		}
+		
+		for(var i=j=0;i<n.length;i++)
+		{
+			if(n[i]!=' '&&n[i]!='NaN')
+			{
+				s[j]=n[i]
+				j++;
+			}
+		}
+
+		for(var i=0;i<s.length;i++)
+		{
+			if(s[i]=='+'||s[i]=='-')
+			{	
+				switch(s[i])
+				{
+					case '+':s[i+1]=s[i-1]+s[i+1];
+							s[i]=' '
+							s[i-1]=' '
+					break;
+					case '-':s[i+1]=s[i-1]-s[i+1];
+							s[i]=' '
+							s[i-1]=' '
+					break;
+				}
+				
+			}
+		}
+
+		for(var i=0;i<s.length;i++)
+		{
+			if(s[i]!=' '&&s[i]!='NaN')
+			{
+				sum=s[i];
+				break;
+			}
+		}
+
+		var ot=document.getElementsByClassName('ot')[0]
+		if(F==0)
+			ot.innerText=a.innerText
+		else if(a.innerText==0)
+			ot.innerText=0
+		else
+		ot.innerText=sum
+		F++;
+		console.log('p='+p)
+		console.log('n='+sum)
+		/*	if(A==0)
+		a.innerText=" "
+		if((i=='+'||i=='-'||i=='*'||i=='/'||i=='%'||i=='.')&&A==0)
+		{
+			a.innerText=`0${i}`
+			B=0;
+		}
+		else
+		{
+			var b=document.createElement('div').innerText=i
+			a.append(b)
+			B=0;
+		}
+		A++;
+		if(i=="AC")
+		{
+			a.innerText="0"
+			A=0;
+		}*/
+	}
+</script>
+</html>

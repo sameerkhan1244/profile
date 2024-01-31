@@ -1,0 +1,57 @@
+.div1
+{
+	height:100%;
+	width:45%;
+	border-radius:180%;
+	border:1px solid white;
+	color:white;
+	margin-top:5%;
+	margin-left:28%;
+	animation:sample 50s linear;
+	animation-iteration-count:infinite;
+}
+.div2
+{
+	height:80%;
+	width:81%;
+	border-radius:180%;
+	border:1px solid white;
+	color:white;
+	margin-top:-10%;
+	margin-left:9%;
+	 20s linear;
+	animation-iteration-count:infinite;
+}.div3
+{
+	height:80%;
+	width:81%;
+	border-radius:180%;
+	border:1px solid white;
+	color:white;
+	margin-top:-5%;
+	margin-left:3%;
+	animation:sample 50s linear;
+	animation-iteration-count:infinite;
+}
+.img1
+{
+	animation:sample 10s linear infinite;
+	position:relative;
+	bottom:1%;
+}
+.img2
+{
+	animation:sample 10s linear infinite;
+	position:relative;
+	top:10%;
+}
+@keyframes sample
+{
+	100%{transform:rotate(360deg);}
+}
+body
+{
+	background-image:url('https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
