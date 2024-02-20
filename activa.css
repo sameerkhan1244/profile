@@ -1,0 +1,311 @@
+/*menu bar*/
+.pm
+{
+	position:relative;
+	left:40px;
+	bottom:56px;
+	font-family:arial;
+	font-size:20px;
+	letter-spacing:1px;
+}
+.ul1
+{
+	background:white;
+	height:55px;
+	width:94%;
+	border:;
+	position:fixed;
+	top:-3%;
+	left:px;
+	z-index:1;
+}
+.ul1 li
+{
+	display:inline-block;
+	list-style:none;
+	position:relative;
+	left:90px;
+	bottom:49px;
+	margin-left:13px;
+	line-height:55px;
+}
+.ul1 img
+{
+	position:relative;
+	right:30px;
+	top:7px;
+}
+.ul1 li a
+{
+	color:black;
+	text-decoration:none;
+	font-size:15px;
+	font-family:arial;
+}
+.ul1 a:hover
+{
+	color:black;
+	border-bottom:3px solid red;
+}
+.img1
+{
+	position:relative;
+	top:;
+	left:4%;
+}
+
+/*sub menu*/
+.ul2
+{
+	display:none;
+}
+.ul1 li:hover ul 
+{
+	width:100px;
+	height:140px;
+	display:block;
+	background:white;
+	color:red;
+	position:absolute;
+
+}
+.ul1 li a:hover
+{
+	color:#339933;
+}
+.ul2 li a
+{
+	position:relative;
+	right:130px;
+	top:35px;
+	color:black;
+}
+.ul3
+{
+	display:none;
+}
+.ul1 li:hover .ul3
+{
+	display:block;
+	position:absolute;
+}
+.ul3 li a
+{
+	position:relative;
+	right:130px;
+	top:40px;
+	color:black;
+}
+/*sub menu*/
+/*copy card*/
+.divs2
+{
+	height:22%;
+	width:21%;
+	border:1px solid #F0F0F0;
+	background:#E8E8E8;
+	position:relative;
+	top:3%;
+	left:1%;
+	display:inline-block;
+	margin-left:20px;
+	transform:scale(1,1);
+	transition:transform 1s;
+}
+.divs2:hover
+{
+	transform:scale(1.1,1.1);
+	transition-duration:2s;
+	border:0.1px solid #40bf40;
+
+}
+.imgs3
+{
+	height:140px;
+	width:180px;
+	margin-left:0px;
+}
+.p4
+{
+	position:relative;
+	left:-15.9%;
+	margin-top:25%;
+	color:black;
+	font-family:arial;
+	width:80%;
+	font-size:15px;
+}
+.pp1
+{
+	position:relative;
+	left:23%;
+	top:11%;
+	color:black;
+	font-family:arial;
+	height:%;
+	width:62%;
+	font-size:0px;
+	font-size:15px;
+}
+.do
+{
+	border:1px solid red;
+	height:7%;
+	width:12%;
+	line-height:90%;
+	margin-left:100px;
+	position:relative;
+	top:5%;
+	margin-left:5%;
+	padding-top:5%;
+	padding-left:2.4%;
+	border-radius:180%;
+	background:#40bf40;
+	border:1px solid #40bf40;
+}
+.hh1
+{
+	color: #008000;
+	font-family:arial;
+	font-size:20px;
+	position:relative;
+	margin-left:30%;
+	top:11%;
+}
+.bt2
+{
+	background:#40bf40;
+	color:white;
+	font-family:arial;
+	width:40%;
+	height:12%;
+	margin-left:30%;
+	position:relative;
+	top:12%;
+	left:-1%;
+	border:1px solid #40bf40;
+	border-radius:20px;
+}
+.bt2:hover
+{
+	background:white;
+	color:black;
+}
+/*copy card*/
+
+/*templete*/
+.div1
+{
+	height:220%;
+	width:99.5%;
+	position:relative;
+	margin-top:2%;
+	background:;
+}
+.div2
+{
+	height:11%;
+	width:180px; 
+	padding:1px;
+	margin-top:-10%;
+	margin-left:7.5%;
+	display:inline-block;
+	transform:scale(1,1);
+	transition:transform 1s;
+}
+.div2:hover
+{
+	transform:scale(1.1,1.1);
+	transition-duration:2s;
+}
+.img3
+{
+	height:100%;
+	width:100;
+	margin-left:0px;
+}
+.p4
+{
+	position:relative;
+	right:20px;
+	top:50px;
+	color:black;
+	font-family:arial;
+	height:22px;
+	line-height:22px;
+}
+/*flip-card*/
+.flip-card
+{
+	width:0%;
+	height:0%;
+	perspective:600px;
+	position:relative;
+	margin-left:0%;
+}
+.flip-card-inner
+{
+	position:relative;
+	width:180px;
+	height:0px;
+	text-align:center;
+	transition:transform 0.9s;
+	transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-inner
+{
+	transform:rotatey(180deg);
+}
+.flip-card-frontside,.flip-card-backside
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	backface-visibility:hidden;
+}
+.flip-card-backside
+{
+	background-color:#40bf40;
+	color:#40bf40;
+	transform:rotatey(180deg);
+}
+.flip-card-frontside img
+{
+	width:180px;
+	height:140px;
+}
+.p2
+{
+	font-weight:bold;
+	font-size:30px;
+	font-family:arial;
+	margin-right:6%;
+}
+/*flip-card*/
+/*button*/
+.butt1
+{
+	position:relative;
+	left:45%;
+	top:60%;
+	width:80px;
+	height:40px;
+	background:#40bf40;
+	border:1px solid #40bf40;
+	border-radius:30px;
+}
+.butt1 a
+{
+	color:white;
+}
+.butt1:hover a
+{
+	color:black;
+	
+}
+.butt1:hover
+{
+	background:white;
+	color:black;
+}
+/*button*/

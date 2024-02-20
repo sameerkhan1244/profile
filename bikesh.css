@@ -1,0 +1,660 @@
+
+/*menu above*/
+.menus
+{
+	height:65px;
+	width:98%;
+	border:1px solid black;
+	position:fixed;
+	top:0%;
+	z-index:1;
+	background:;
+}
+.pm
+{
+	position:relative;
+	left:40px;
+	bottom:56px;
+	font-family:arial;
+	font-size:20px;
+	letter-spacing:1px;
+}
+.mspan
+{
+	margin-left:350px;
+	line-height:65px;
+	color:#ff6600;
+	font-size:40px;
+	font-weight:900;
+}
+/*menu bar*/
+.ul1
+{
+	background:white;
+	height:55px;
+	width:94%;
+	border:;
+	position:fixed;
+	top:-3%;
+	left:px;
+	z-index:1;
+}
+.ul1 li
+{
+	display:inline-block;
+	list-style:none;
+	position:relative;
+	left:90px;
+	bottom:49px;
+	margin-left:13px;
+	line-height:55px;
+}
+.ul1 img
+{
+	position:relative;
+	right:30px;
+	top:7px;
+}
+.ul1 li a
+{
+	color:black;
+	text-decoration:none;
+	font-size:15px;
+	font-family:arial;
+}
+.ul1 a:hover
+{
+	color:black;
+	border-bottom:3px solid red;
+}
+
+.img1
+{
+	position:relative;
+	top:;
+	left:4%;
+}
+
+/*sub menu*/
+.ul2
+{
+	display:none;
+}
+.ul1 li:hover ul 
+{
+	width:100px;
+	height:140px;
+	display:block;
+	background:white;
+	color:red;
+	position:absolute;
+
+}
+.ul1 li a:hover
+{
+	
+	color:#339933;
+}
+.ul2 li a
+{
+	position:relative;
+	right:130px;
+	top:35px;
+	color:black;
+}
+.ul3
+{
+	display:none;
+}
+.ul1 li:hover .ul3
+{
+	display:block;
+	position:absolute;
+}
+.ul3 li a
+{
+	position:relative;
+	right:130px;
+	top:40px;
+	color:black;
+	
+}
+/*sub menu*/
+/*home*/
+.diva
+{
+	width:100%;
+	height:435%;
+	position:relative;
+	top:-1%;
+}
+.divh
+{
+	height:17%;
+	width:99.8%;
+	border:;
+	position:relative;
+	top:1.3%;
+}
+.divs
+{
+	position:relative;
+	width:40%;
+	height:55%;
+	left:50%;
+	top:-35%;
+	border:1px solid black;
+	background:url('moto.png');
+	background-size:cover;
+	animation-name:im;
+	animation-duration:2s;
+}
+@keyframes im
+{
+	10%{background-img:url('moto.png');}
+	25%{background-img:url('moto.png');}
+	100%{background-img:url('moto.png');}
+}
+.divt
+{
+	border:1px solid white;
+	height:15%;
+	width:30%;
+	position:relative;
+	top:20%;
+	left:8%;
+	border-radius:10px;
+	font-family:arial;
+}
+.imgh
+{
+	position:relative;
+	bottom:30%;
+	left:20%;
+}
+.ht1
+{
+	color:white;
+	border:1px solid white;
+	font-size:10px;
+	font-size:2%;
+	border:;
+	width:5%;
+	position:relative;
+	left:5%;
+	bottom:15%;
+	display:inline-block;
+}
+.ht2
+{
+	color:white;
+	border:1px solid white;
+	font-size:40px;
+	border:;
+	width:2.1%;
+	position:relative;
+	left:5%;
+	bottom:15%;
+	display:inline-block;
+}
+.spn1
+{
+	color:white;
+	font-size:12px;
+	position:relative;
+	top:9%;
+}
+.divm
+{
+	width:100%;
+	height:100%;
+	border:;
+	border-bottom-right-radius:27.9%;
+	border-top-right-radius:;
+	background:linear-gradient(to right,#40bf40,#40bf40,#40bf40,#40bf40);
+}
+.divl
+{
+	color:white;
+	font-family:arial;
+	position:relative;
+	top:18%;
+	margin-left:8%;
+}
+.ph
+{
+	color:white;
+	position:relative;
+	top:15%;
+	margin-left:8%;
+}
+.buth
+{
+	width:9%;
+	height:8%;
+	border-radius:22px;
+	position:relative;
+	bottom:30%;
+	margin-left:10%;
+	border:1px solid white;
+	background:#39ac39;
+	color:white;
+}
+.buth:hover
+{
+	background:white;
+	color:black;
+}
+
+/*copy*/
+/*about section*/
+.p2
+{
+	margin-left:15%;
+	font-family:arial;
+	font-size:25px;
+	position:relative;
+	top:1.5%;
+	left:;
+	transform:scale(1,1);
+	transition:transform 1s;
+}
+.p2:first-letter
+{
+	color:red;
+}
+.p1
+{	
+	margin-left:15%;
+	font-size:15px;
+	position:relative;
+	top:1.3%;
+	position:relative;
+	bottom:;
+	left:;
+	line-height:18px;
+}
+.img2
+{
+	position:relative;
+	bottom:200px;
+	left:480px;
+	height:200px;
+	Animation-name:sample;
+	Animation-duration:1s;
+	Animation-timing-function:linear;
+	Animation-iteration-count:infinite;
+	Animation-direction:alternate;
+}
+@keyframes 
+{
+	from{width:350px;}
+	to{width:440px;}
+}
+
+/*about secion*/
+/*Models*/
+.p3
+{
+	position:relative;
+	top:1.5%;
+	margin-left:39%;
+	font-size:25px;
+	transform:
+	
+}
+.bt1
+{
+	background:#40bf40;
+	color:white;
+	font-family:arial;
+	width:9%;
+	height:0.9%;
+	margin-left:47.5%;
+	position:relative;
+	top:1.2%;
+	border:1px solid #40bf40;
+	border-radius:20px	;
+}
+.bt1:hover
+{
+	background:white;
+	color:black;
+}
+
+.div1
+{
+	height:25%;
+	width:75%;
+	position:relative;
+	top:1.5%;
+	margin-left:13%;
+}
+.divs1
+{
+	height:25%;
+	width:99%;
+	position:relative;
+	top:2%;
+	margin-left:1%;
+}
+.div2
+{
+	height:44%;
+	width:27%;
+	border:1px solid #F0F0F0;
+	background:#E8E8E8;
+	position:relative;
+	top:3%;
+	left:5%;
+	display:inline-block;
+	margin-left:20px;
+	transform:scale(1,1);
+	transition:transform 1s;
+}
+.divs2
+{
+	height:44%;
+	width:20%;
+	border:1px solid #F0F0F0;
+	background:#E8E8E8;
+	position:relative;
+	top:3%;
+	left:3.9%;
+	display:inline-block;
+	margin-left:20px;
+	transform:scale(1,1);
+	transition:transform 1s;
+}
+.div2:hover
+{
+	transform:scale(1.1,1.1);
+	transition-duration:2s;
+	border:0.1px solid #40bf40;
+
+}
+.divs2:hover
+{
+	transform:scale(1.1,1.1);
+	transition-duration:2s;
+	border:0.1px solid #40bf40;
+
+}
+
+.img3
+{
+	height:140px;
+	width:180px;
+	margin-left:0px;
+}
+.p4
+{
+	position:relative;
+	left:-25%;
+	bottom:7%;
+	color:black;
+	font-family:arial;
+	width:80%;
+	font-size:15px;
+}
+.pp1
+{
+	position:relative;
+	left:18%;
+	bottom:11.9%;
+	color:black;
+	font-family:arial;
+	height:%;
+	width:62%;
+	font-size:0px;
+	font-size:15px;
+}
+.do
+{
+	border:1px solid red;
+	height:7%;
+	width:12%;
+	line-height:50%;
+	margin-left:100px;
+	position:relative;
+	top:5%;
+	margin-left:5%;
+	padding-top:5%;
+	padding-left:2%;
+	border-radius:180%;
+	background:#40bf40;
+	border:1px solid #40bf40;
+}
+.hh1
+{
+	color: #008000;
+	font-family:arial;
+	font-size:20px;
+	position:relative;
+	margin-left:30%;
+	bottom:15%;
+}
+.bt2
+{
+	background:#40bf40;
+	color:white;
+	font-family:arial;
+	width:40%;
+	height:12%;
+	margin-left:30%;
+	position:relative;
+	bottom:16%;
+	left:-1%;
+	border:1px solid #40bf40;
+	border-radius:20px;
+}
+.bt2:hover
+{
+	background:white;
+	color:black;
+}
+/*Models*/
+/*Top Bike*/
+.div3
+{
+	height:170px;
+	width:90%;
+	position:relative;
+	top:1%;
+	left:2%;
+	border:;
+}	
+.div4
+{
+	height:82%;
+	width:20%;
+	border:;
+	position:relative;
+	top:10px;
+	left:8px;
+	display:inline-block;
+	transform:scale(1,1);
+	transition:transform 1s
+}
+.div4:hover
+{
+	transform:scale(1.1,1.1);
+	transition-duration:2s;
+}
+.p5
+{
+	position:relative;
+	left:410px;
+	bottom:230px;
+	font-size:20px;
+}
+.img4
+{
+	height:100%;
+	width:100%;
+	margin-left:;
+}
+.p6
+{
+	color:red;
+}
+/*Top Bike*/
+/*footer part-1*/
+.div5
+{
+	border:1px solid #ffd1b3;
+	position:relative;
+	bottom:150px;
+	left:80px;
+	height:500px;
+	width:80%;
+	background:#40bf40;
+	border-radius:10px;
+}
+.div6
+{
+	border:1px solid #ffeee6;
+	position:relative;
+	top:50px;
+	left:40px;
+	height:400px;
+	width:90%;
+	background:#ffeee6;
+	border-radius:10px;
+}
+.img5
+{
+	margin-left:10px;
+	Animation-name:sample;
+	Animation-duration:1s;
+	Animation-timing-function:linear;
+	Animation-iteration-count:infinite;
+	Animation-direction:alternate;
+	
+}
+.div7
+{
+	border:1px solid #ffffff;
+	position:relative;
+	bottom:280px;
+	left:280px;
+	height:360px;
+	width:52%;
+	background:white;
+	border-radius:20px;
+}
+.p7
+{
+	margin-left:40px;
+	font-size:25px;
+	font-family:arial;
+	position:relative;
+	bottom:42px;
+}
+.p8
+{
+	color:gray;
+	font-size:12px;
+	position:relative;
+	bottom:60px;
+	left:40px;
+}
+.hr1
+{
+	position:relative;
+	bottom:60px;
+	width:300px;
+	color:gray;
+}
+.p9
+{
+	color:gray;
+	position:relative;
+	bottom:70px;
+	left:50px;
+	font-size:20px;
+	font-family:arial;
+}
+.p10
+{
+	position:relative;
+	bottom:80px;
+	left:50px;
+	font-size:20px;
+	font-family:arial;
+}
+/*footer part-2*/
+.div8
+{
+	height:15%;
+	width:99%;
+	border:1px solid #E8E8E8;
+	background:#40bf40;
+	position:relative;
+	top:3%;
+	left:0.5%;
+}
+.div9
+{
+	height:270px;
+	width:99.9%;
+	position:relative;
+	top:65px;
+	background:#202020;
+}
+.div10
+{
+	position:relative;
+	right:60px;
+	top:40px;
+	width:80px;
+	padding:0px;
+	display:inline-block; 
+}
+.div10 p 
+{
+	position:reative;
+	bottom:15px;
+	color:white;
+}
+.div10 a
+{
+	text-decoration:none;
+	color:white;
+
+}
+.div10 a:hover
+{
+	color:green;
+}
+.bf:hover
+{
+	background:#40bf40;
+	color:white;
+}
+.fspan
+{
+	position:relative;
+	bottom:50%;
+	left:45px;
+	color:white;
+	font-size:20px;
+	font-family:arial;
+}
+.ffspan 
+{
+	position:relative;
+	top:15%;
+	margin-left:38%;
+	font-size:25px;
+	padding-left:5%;
+}
+.img6
+{
+	height:px;
+	width:px;
+	position:relative;
+	bottom:80px;
+	left:330px;
+}
+/*footer part-2*/
